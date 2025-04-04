@@ -208,6 +208,13 @@ div.buttons > a.button:active {
 footer {
 	padding: 1rem;
 }
+footer > p:last-child {
+	text-align: center;
+	margin-top: 1.25rem;
+}
+footer img {
+	width: 45px;
+}
 a {
 	color: #111;
 	text-decoration: underline;
