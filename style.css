@@ -214,6 +214,7 @@ footer > p:last-child {
 }
 footer img {
 	width: 32px;
+	cursor: pointer;
 }
 a {
 	color: #111;
