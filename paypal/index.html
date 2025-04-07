@@ -29,59 +29,83 @@
 				-webkit-text-size-adjust: 100%;
 			}	
 			html, body {
-				background-color: #fff;
+				background-color: #ddf7ff;
 			}
 			body {
-				margin: 2rem;
-			}
-			header, section {
-				max-width: 1080px;
-				margin: 0 auto;
+				margin: 6rem 1rem;
 			}
 			header {
+				position: fixed;
+				top: 0;
+				left: 0;
+				width: 100%;
+				background-color: #fff;
+				box-shadow: 0 1px 8px #58d7ff;
+			}
+			header > p {
 				text-align: center;
-			}
+				margin: 1.25rem 1rem 1rem 1rem;
+			}			
 			section {
-				margin-top: 4rem;
-				padding-top: 4rem;
-				border-top: 2px dashed #334;				
-			}
-			section.es {
-				padding-bottom: 4rem;
-				border-bottom: 2px dashed #334;
+				max-width: 1080px;
+				margin: 0 auto;
+				margin-top: 2rem;
+				background-color: #fff;
+				padding: 2rem;
+				border-top: 6px solid #ddf7ff;
+				border-bottom: 6px solid #ddf7ff;
+				outline: 12px dotted #ddf7ff;
+				outline-offset: -6px;
 			}
 			h2 {
 				font-size: 2rem;
 				font-weight: 600;
+				line-height: 1.25;
 			}
-			p {
-				font-size: 1.25rem;
+			section > p {
+				font-size: 1.25rem;				
 				line-height: 1.4;
 				margin-top: 1.25rem;
 			}
 			p.link {
-				text-align: right;
+				text-align: center;
+				margin-top: 2rem;
+			}
+			section img {
+				width: 32px;
 			}
 			a {
-				color: #111;
+				text-decoration: none;
+			}
+			@media screen and (min-width: 768px) {
+				body {
+					margin: 8rem 4rem;
+				}
+				section {
+					margin-top: 4rem;
+					padding: 4rem 5rem 3rem 5rem;
+				}
+				p.link {
+					margin-top: 3rem;
+				}
 			}
 		</style>
 	</head>
 	<body>
 		<header>
-			<p><p><a href="../"><img src="../logo.png" /></a></p>
+			<p><a href="../"><img src="../logo.png" /></a></p>
 		</header>
-		<section>
+		<section class="en">
 			<h2>Your payment has been completed successfully</h2>
 			<p>Thank you for your payment. Your transaction has been completed and a receipt of your purchase has been emailed to you.</p>
 			<p>Your login credentials for your Stremio account will be emailed to you in the next 24 hours.</p>
-			<p class="link"><a href="../">portobello.tv</a></p>
+			<p class="link"><a href="../"><img title="Go back to Portobello" src="../avatar.png" /></a></p>
 		</section>
 		<section class="es">
 			<h2>El pago se ha completado con éxito</h2>
 			<p>Gracias por tu pago. La transacción se ha completado y se ha enviado por correo electrónico un recibo de la compra.</p>
 			<p>En las próximas 24 horas recibirás por correo electrónico las credenciales de acceso a tu cuenta de Stremio.</p>
-			<p class="link"><a href="../es/">portobello.tv</a></p>
+			<p class="link"><a href="../es/"><img title="volver a Portobello" src="../avatar.png" /></a></p>
 		</section>		
 		<!-- 100% privacy-first analytics -->
 		<script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>	
