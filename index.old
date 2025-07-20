@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Portobello</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+		<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png">
+		<link rel="manifest" href="/favicons/site.webmanifest">		
+		<link href="style.css" media="screen" rel="stylesheet">
+		<script src="script.js"></script>
+	</head>
+	<body>
+		<nav>
+			<p><img src="logo.png" /></p>
+			<a class="button" href="es/">Español</a>
+		</nav>
+		<header>			
+			<h1>All your streaming content in one place, without ads</h1>
+		</header>
+		<div id="hero">
+			<video poster="hero.png" preload="auto" muted autoplay playsinline loop>
+				<source src="hero.mp4" type="video/mp4">
+			</video>				
+		</div>
+		<div id="content">
+			<section>
+				<h2 class="item">1</h2>
+				<h2><span class="highlight">Download the app</span></h2>
+				<p>
+					Make sure you can <a target="_blank" href="https://www.stremio.com/downloads">install the Stremio app</a> before you subscribe. You'll find it in the app store of your device or Smart TV.
+				</p>
+				<p>
+					<strong>Do not create an account. You will get one at the end of the process.</strong>
+				</p>
+				<div id="downloads">
+					<a class="button" target="_blank" href="https://play.google.com/store/apps/details?id=com.stremio.one">Android</a>
+					<a class="button" href="https://www.strem.io/download?platform=windows&four=true">Windows</a>
+					<a class="button" href="https://www.strem.io/download?platform=mac&four=true">Mac</a>
+					<a class="button" target="_blank" href="https://flathub.org/apps/details/com.stremio.Stremio">Linux</a>					
+				</div>
+			</section>
+			<section>
+				<h2 class="item">2</h2>
+				<h2><span class="highlight">Subscribe</span></h2>
+				<div>
+					<p>
+						Pick the Portobello subscription that works best for you: monthly or yearly. <strong>The yearly subscription equals two months free</strong>.
+					</p>
+					<div id="cta">
+						<div class="form">
+							<p>Yearly subscription</p>
+							<p><strong>60 €</strong></p>
+							<div class="buttons">
+								<a class="button" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-2V574008HJ620614XM7XH5LA">PayPal / Card</a>
+							</div>
+						</div>
+						<div class="form">
+							<p>Monthly subscription</p>
+							<p><strong>6 €</strong></p>
+							<div class="buttons">
+								<a class="button" href="https://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-3CS41455MP560815VM7XH5CY">Paypal / Card</a>
+							</div>							
+						</div>
+						<p>
+							You will be taken to PayPal's secure website to complete the payment.<br />You can pay with your PayPal account or with your debit or credit card.
+						</p>
+					</div>
+				</div>
+			</section>
+			<section>
+				<h2 class="item">3</h2>
+				<h2><span class="highlight">Done</span></h2>
+				<p>
+					Once the payment's made, <strong>you will get the username and password to access your Stremio account within 24 hours</strong>, at the email address you used for the payment.
+				</p>
+			</section>
+		</div>
+		<div id="belt">
+			<div id="faq">
+				<h3 class="item">*</h3>
+				<div>
+					<h3>What is Portobello?</h3>
+					<p>
+						Portobello is the setup of a personal streaming service based on Stremio.
+					</p>
+					<p>
+						Stremio is a video player that can expand its capabilities with the use of extensions. Portobello simply sets up the appropriate extensions to provide a personal streaming service. 
+					</p>
+					<h3>What devices are supported?</h3>
+					<ul>
+						<li>Android phones and tablets</li>
+						<li>Android TVs and Android TV devices</li>
+						<li>Google TVs and Google TV devices</li>
+						<li>Chromecast</li>
+						<li>Samsung TVs, 2019 onwards</li>
+						<li>LG TVs, from 2020 onwards</li>
+						<li>PCs running Windows, MacOS or Linux</li>
+					</ul>
+					<p>
+						<strong>Currently iOS devices (iPhone, iPad, Apple TV) are not supported</strong>, but are already in the testing phase, so it is expected that they will be supported later this year.
+					</p>
+					<h3>Can I download the content to watch it offline?</h3>
+					<p>
+						You can't download content, only stream it.
+					</p>
+					<h3>Can I share my account?</h3>
+					<p>
+						The account has no profiles, so it works with a single user. You can share it if you want, but keep in mind that using it from more than one place at a time might impact performance. 
+					</p>
+					<h3>Can I use an existing Stremio account?</h3>
+					<p>
+						This service only works with Stremio accounts set up by Portobello.
+					</p>
+					<h3>Which personal data is stored?</h3>
+					<p>
+						 Only the email address you use to make the payment is saved for as long as you use the service. Absolutely nothing else. If at any time you decide to stop using it, your email address will be removed from the database.
+					</p>
+					<p>
+						Portobello does not store any of the data that PayPal requests to make the payment, or any information about your use of the service with Stremio.
+					</p>
+					<p>
+						This website does not log your IP address or location and does not use any cookies.
+					</p>
+					<h3>How can I get in touch?</h3>
+					<p>
+						By e-mail at <script type="text/javascript">document.write(`<a href="mailto:&#109;&#97;&#105;&#108;&#64;&#112;&#111;&#114;&#116;&#111;&#98;&#101;&#108;&#108;&#111;&#46;&#116;&#118;" rel="nofollow noopener noreferrer">&#109;&#97;&#105;&#108;&#64;&#112;&#111;&#114;&#116;&#111;&#98;&#101;&#108;&#108;&#111;&#46;&#116;&#118;</a>`);</script>
+					</p>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<p>
+				Portobello is solely a setup service for third-party software at third-party locations. It does not develop or host any software. Nor does it host or provide content or files of any kind.
+			</p>
+			<p>
+				<img onclick="rewind()" title="Go back up" src="avatar.png" />
+			</p>
+		</footer>
+		<!-- 100% privacy-first analytics -->
+		<script data-collect-dnt="true" async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+		<script>
+		  window.op = window.op||function(...args){(window.op.q=window.op.q||[]).push(args);};
+		  window.op('init', {
+		    clientId: 'f29024d1-6882-4b9f-95ce-eaad4446a31f',
+		    trackScreenViews: true,
+		    trackOutgoingLinks: true,
+		    trackAttributes: true,
+		  });
+		</script>
+		<script src="https://openpanel.dev/op1.js" defer async></script>		
+	</body>
+</html>
