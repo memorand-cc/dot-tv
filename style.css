@@ -126,7 +126,7 @@ a:hover {
 
 @media screen and (max-width: 1279px) {
 	header {
-		padding: 0 2rem;	
+		padding: 0 2rem;
 	}
 	#join {
 		display: block;
@@ -140,10 +140,11 @@ a:hover {
 @media screen and (max-width: 1023px) {
 	header {
 		display: block;
-		padding: 6rem 2rem 2rem 2rem;
+		padding: 8rem 1rem 2rem 1rem;
 	}
 	header > h1 {
 		margin-bottom: 6rem;
+		margin-left: 0;
 		font-size: calc(100vw / 5.5);
 	}
 	header > p {
