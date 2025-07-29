@@ -2,6 +2,8 @@
 	font-family: Inter, sans-serif;
 	font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 	font-feature-settings: "dlig", "zero", "ss01", "ss03", "cv01", "cv10";
+	--backColor: #615243;
+	--foreColor: #dacaaa;
 }
 @supports (font-variation-settings: normal) {
 	:root { font-family: InterVariable, sans-serif; }
@@ -19,11 +21,11 @@ body {
 	font-weight: 450;
 	font-style: normal;
 	-webkit-font-smoothing: antialiased;
-	-webkit-text-size-adjust: none;
+	-webkit-text-size-adjust: none;	
 	line-height: 1.45;
 	letter-spacing: 0.4px;
-	background-color: #615243;
-	color: #dacaaa;
+	background-color: var(--backColor);
+	color: var(--foreColor);
 }
 header, #content, footer {
 	box-sizing: border-box;
@@ -49,7 +51,7 @@ header > p {
 	align-self: center;
 	justify-self: end;
 	font-size: 1rem;
-	color: #333;
+	color: #999;
 }
 header > p > a {
 	color: #999;
@@ -73,12 +75,12 @@ header > p > a:hover {
 	margin-top: 1rem;
 }
 a {
-	color: #dacaaa;
+	color: var(--foreColor);
 	text-decoration: none;
-	border-bottom: 1.5px solid #dacaaa;	
+	border-bottom: 1.5px solid var(--foreColor);
 }
 a:hover {
-	border-bottom: 2.25px solid #dacaaa;
+	border-bottom: 2.25px solid var(--foreColor);
 }
 #right {
 	justify-self: end;
@@ -88,7 +90,7 @@ a:hover {
 #join {
 	box-sizing: border-box;
 	text-align: center;
-	border: 2px solid #dacaaa;
+	border: 2px solid var(--foreColor);
 	border-radius: 6px;
 	padding: 2rem;
 
@@ -100,7 +102,7 @@ a:hover {
 	align-self: center;
 	margin-right: 2rem;
 	border: 0;
-	display: inline-grid;	
+	display: inline-grid;
 }
 #join > a > img {
 	width: 170px;
@@ -112,16 +114,16 @@ a:hover {
 #join > a.button {
 	display: block;
 	font-size: 1.25rem;
-	color: #dacaaa;
-	border: 2px solid #dacaaa;
+	color: #e0e0e0;
+	border: 2px solid var(--foreColor);
 	border-radius: 4px;
 	padding: 1rem;
 	margin: 2rem auto 0 auto;
 	max-width: 16rem;
 }
 #join > a.button:hover {
-	background-color: #dacaaa;
-	color: #615243;
+	background-color: var(--foreColor);
+	color: var(--backColor);
 }
 
 @media screen and (max-width: 1279px) {
