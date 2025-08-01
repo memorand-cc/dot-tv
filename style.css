@@ -2,8 +2,8 @@
 	font-family: Inter, sans-serif;
 	font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 	font-feature-settings: "dlig", "zero", "ss01", "ss03", "cv01", "cv10";
-	--backColor: #615243;
-	--foreColor: #dacaaa;
+	--backColor: #016180;
+	--foreColor: #e0e0e0;
 }
 @supports (font-variation-settings: normal) {
 	:root { font-family: InterVariable, sans-serif; }
