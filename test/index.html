@@ -1,41 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Registro</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Registro</title>
 </head>
 <body>
-    <h2>Formulario de Registro</h2>
-    <form id="emailForm">
-        <label for="email">Correo Electrónico:</label>
-        <input type="email" id="email" name="email" required>
-        <button type="submit">Enviar</button>
-    </form>
+  <h1>Registro de Correo Electrónico</h1>
+  <form id="emailForm">
+    <label for="email">Correo Electrónico:</label>
+    <input type="email" id="email" name="email" required>
+    <button type="submit">Enviar</button>
+  </form>
 
-    <script>
-        document.getElementById('emailForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            const email = document.getElementById('email').value;
-            
-            // Enviar el email al Google Apps Script
-            fetch('https://script.google.com/macros/s/AKfycby0gHA_R2X_TbmyRtWdP_ZZMufeh_tubg6cZMbuo-EVRRkZtd7NAkWJf2pG_X5L98CcNA/exec', {
-                method: 'POST',
-                body: JSON.stringify({ email: email }),
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            })
-            .then(response => response.json())
-            .then(data => {
-                alert('¡Correo registrado correctamente!');
-                document.getElementById('email').value = ''; // Limpiar campo de correo
-            })
-            .catch(error => {
-                alert('Hubo un error. Intenta de nuevo.');
-                console.error(error);
-            });
-        });
-    </script>
+  <script>
+    document.getElementById("emailForm").addEventListener("submit", function(event) {
+      event.preventDefault();  // Prevenir el comportamiento por defecto del formulario
+
+      var email = document.getElementById("email").value;
+
+      // URL de tu Web App de Google Apps Script
+      var webAppUrl = 'https://script.google.com/macros/s/AKfycby0gHA_R2X_TbmyRtWdP_ZZMufeh_tubg6cZMbuo-EVRRkZtd7NAkWJf2pG_X5L98CcNA/exec';
+
+      fetch(webAppUrl, {
+        method: 'POST',
+        body: JSON.stringify({ email: email }), // Enviar el correo como JSON
+        headers: {
+          'Content-Type': 'application/json'  // Asegurarse de que el tipo de contenido es JSON
+        }
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.result === "success") {
+          alert('¡Correo registrado correctamente!');
+        } else {
+          alert('Hubo un error al registrar el correo.');
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('Error al enviar el correo.');
+      });
+    });
+  </script>
 </body>
 </html>
