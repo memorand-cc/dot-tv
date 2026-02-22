@@ -5,7 +5,6 @@
 	--backColor: #171717;
 	--compColor: #1f1f1f;
 	--borderColor: #2a2a2a;
-	/*--foreColor: #eeebe3;*/
 	--foreColor: #c0c0c0;
 }
 @supports (font-variation-settings: normal) {
