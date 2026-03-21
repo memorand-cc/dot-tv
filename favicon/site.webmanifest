@@ -1,6 +1,6 @@
 {
-  "name": "memorand",
-  "short_name": "mmrnd",
+  "name": "portbello",
+  "short_name": "pb",
   "icons": [
     {
       "src": "/favicon/web-app-manifest-192x192.png",
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#bb3a22",
-  "background_color": "#bb3a22",
+  "theme_color": "#111",
+  "background_color": "#1d1d1d",
   "display": "standalone"
 }
