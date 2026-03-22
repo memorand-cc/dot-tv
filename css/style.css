@@ -233,10 +233,11 @@ header div.slideshow-container img {
 	grid-template: 1fr / 120px 1fr;
 	margin-top: 2rem;
 	max-width: 440px;
+	height: 52px;
 }
 #join button {
 	width: 120px;
-	height: 47.45px;
+	height: 49px;
 	padding: 0.5rem;
 	font-size: 1rem;
 	font-weight: 600;
@@ -252,11 +253,20 @@ header div.slideshow-container img {
 }
 #join span {
 	align-self: center;
-	display: block;
 	padding-left: 1rem;
 }
 #join span p {
 	color: var(--titleColor);
+}
+#join span p.msg-error {
+	color: #d33;
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+#join span p.msg-success {
+	color: #3d3;
+	font-size: 1.1rem;
+	font-weight: 600;
 }
 
 /****** DOWNLOAD ******/
