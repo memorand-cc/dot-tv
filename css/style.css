@@ -23,7 +23,6 @@
 }
 html, body {
 	height: 100%;
-	overflow-x: hidden;
 }
 body {
 	color: var(--foreColor);
@@ -86,7 +85,6 @@ label {
 input {
 	font-size: 1.1rem;
 	letter-spacing: 0.02rem;
-	max-width: 440px;
 }
 
 
@@ -96,7 +94,7 @@ section {
 	padding: 0 var(--marginGap);
 	border-top: 1px dashed var(--borderColor);
 }
-section > div, section > h4, section > h5, section > form, section > p, section > hr, section > ol, section > ul, footer p {
+section > div, section > h3, section > h4, section > h5, section > form, section > p, section > hr, section > ol, section > ul, footer p {
 	max-width: 600px;
 	margin-left: auto;
 	margin-right: auto;
@@ -220,6 +218,7 @@ header div.slideshow-container img {
 }
 #join input {
 	width: calc(100% - 1rem);
+	max-width: 440px;
 	padding: 0.5rem;
 	border-radius: 6px;
 	color: var(--foreColor);
@@ -233,9 +232,11 @@ header div.slideshow-container img {
 	display: grid;
 	grid-template: 1fr / 120px 1fr;
 	margin-top: 2rem;
+	max-width: 440px;
 }
 #join button {
 	width: 120px;
+	height: 47.45px;
 	padding: 0.5rem;
 	font-size: 1rem;
 	font-weight: 600;
@@ -250,11 +251,11 @@ header div.slideshow-container img {
 	cursor: wait;
 }
 #join span {
-	width: 100%;
 	align-self: center;
+	display: block;
+	padding-left: 1rem;
 }
 #join span p {
-	margin: 0 0 0 1rem;
 	color: var(--titleColor);
 }
 
@@ -417,6 +418,7 @@ footer p + p {
 }
 @media screen and (min-width: 920px) {
 	#info h3 {
+		max-width: 100%;
 		text-align: center;
 	}
 }
