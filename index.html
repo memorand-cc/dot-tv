@@ -17,179 +17,83 @@
 		<link rel="preload" as="image" href="/slides/12.jpg" fetchpriority="high">
 	</head>
 	<body>
-
 		<header>
-			<div id="top">
-				<h1>
-					Portobello
-				</h1>
-				<nav>
-					<ul>
-						<li>EN</li>
-						<li><a href="/es/" title="Cambiar a espa&ntilde;ol">ES</a></li>
-					</ul>
-				</nav>
-			</div>
-			<h2>
-				All-in-one Streaming.
-			</h2>
-			<div class="slideshow-container">
-				<img id="img-bottom" src="" alt="">
-				<img id="img-top" src="/slides/12.jpg" alt="header image slideshow">
-			</div>
+			<h1>Portobello</h1>
+			<ul>
+				<li>EN</li>
+				<li><a title="Cambiar a espa&ntilde;ol" href="/es/">ES</a></li>
+			</ul>
+			<h2>All-in-one Streaming.</h2>
 		</header>
-
-		<section id="info">
-			<h3>
-				An alternative streaming service, built on the Stremio player and publicly available content.
-			</h3>
-			<div>
-				<span class="catalogs"></span>
-				<h5>Every catalog.</h5>
-				<p>
-					Conveniently organized in mainstream catalogs. You will not miss any content, no matter where you come from.
-				<p>
-			</div>
-			<div>
-				<span class="quality"></span>
-				<h5>State-of-the-art quality.</h5>
-				<p>
-					4K video sources up to Dolby Vision and HDR10+. Digital audio up to Dolby Atmos and DTS:X.
-				</p>
-			</div>
-			<div>
-				<span class="subtitles"></span>
-				<h5>Localized subtitles.</h5>
-				<p>
-					Automatically integrated subtitles from OpenSubtitles, in every available language.
-				</p>
-			</div>
+		<section id="slider">
+			<img id="img-bottom" src="" alt="">
+			<img id="img-top" src="/slides/12.jpg" alt="header image slideshow">
 		</section>
-
-		<section id="join">
-			<h4>1. Join the free ßeta</h4>
-			<p>Join the beta to try Portobello by completing this form. It is free and it just takes a few seconds. This will create your Stremio account and automatically set it up with Portobello.</p>
-			<form id="stremioForm">
-				<label for="email">e-mail:</label>
-				<input type="email" id="email" required />
-				<label for="pass">Password:</label>
-				<input type="password" id="pass" required />
-				<label for="confirm">Repeat Password:</label>
-				<input type="password" id="confirm" required />
-				<div>
+		<section id="info">
+			<h3>An alternative streaming service, built on the Stremio player and publicly available content.</h3>
+			<ul>
+				<li>
+					<img src="/img/catalogs.svg" alt="catalogs icon" />
+					<h4>Every Catalog.</h4>
+					<p>Conveniently organized in mainstream catalogs. You will find any content, no matter where you come from.</p>
+				</li>
+				<li>
+					<img src="/img/quality.svg" alt="quality icon" />
+					<h4>State-of-the-art quality.</h4>
+					<p>4K video sources up to Dolby Vision and HDR10+. Digital audio up to Dolby Atmos and DTS:X.</p>
+				</li>
+				<li>
+					<img src="/img/subtitles.svg" alt="subtitles icon" />
+					<h4>Localized subtitles.</h4>
+					<p>Automatically integrated subtitles from OpenSubtitles, in every available language.</p>
+				</li>
+			</ul>
+		</section>
+		<main>
+			<section id="join">
+				<h4>1. Join the free &beta;eta</h4>
+				<p>Join the beta to try Portobello by completing this form. It is free and it just takes a few seconds.</p>
+				<p>This will create your Stremio account and instantly set it up with Portobello. No confirmation e-mail needed.</p>
+				<form id="stremioForm">
+					<label for="email">e-mail:</label>
+					<input type="email" id="email" required />
+					<label for="pass">Password:</label>
+					<input type="password" id="pass" required />
+					<label for="confirm">Repeat Password:</label>
+					<input type="password" id="confirm" required />
 					<button type="submit" id="btn">Join</button>
 					<span><p id="output"></p></span>
-				</div>
-			</form>
-		</section>
-
-		<section id="download">
-			<h4>2. Get the Stremio app</h4>
-			<p>Download the Stremio app for your device and sign in with the credentials you just created. That's it. That's all.</p>
-			<ol>
-				<li><a href="https://play.google.com/store/apps/details?id=com.stremio.one" target="_blank"><img src="/img/googleplay.svg" alt="Google Play" /></a>
-				<li><a href="https://dl.strem.io/stremio-shell-ng/v5.0.16/StremioSetup-v5.0.16_x64.exe"><button><img src="/img/windows.svg" alt="Windows" /><span>Windows</span></button></a></li>
-				<li><a href="https://dl.strem.io/stremio-shell-macos/v5.1.16/Stremio_arm64.dmg"><button><img src="/img/macos.svg" alt="macOS" class="logofix" /><span>MacOS</span></button></a></li>
-			</ol>
-			<hr />
-			<p>You will also find the Stremio app in the app store of your Smart TV or TV Box.</p>
-			<ul>
-				<li><img src="/img/googletv.svg" alt="Google TV" /></li>
-				<li><img src="/img/androidtv.svg" alt="Android TV" /></li>
-				<li><img src="/img/samsung.svg" alt="Samsung" title="Tizen" /></li>
-				<li><img src="/img/lg.svg" alt="LG" title="webOS" /></li>
-				<li><img src="/img/philips.svg" alt="Philips" title="TitanOS" /></li>
-				<li><img src="/img/hisense.svg" alt="Hisense" title="Vidaa" /></li>
-			</ul>
-			<hr />
-			<p>
-				Visit the <a target="_blank" href="https://www.stremio.com/downloads">Stremio website</a> for more download options.
-			</p>
-		</section>
-
-		<section id="faq">
-			<!-- <h4>FAQ</h4> -->
-			<h5>What is Portobello?</h5>
-			<p>
-				Portobello is an addon for Stremio.
-			</p>
-			<h5>What is Stremio?</h5>
-			<p>
-				Stremio is a streaming video player app.
-			</p>
-			<h5>How does Portobello work?</h5>
-			<p>
-				The same way a regular video player app on your device needs you to feed it a video file, Stremio is a streaming video player app that needs some streaming source to function.
-			</p>
-			<p>
-				Portobello browses publicly available content on the internet, and feeds it to the Stremio player app as a streaming source. It sits in the middle between the content and the player, making the latter understand the former.
-			</p>
-			<p>
-				Neither Stremio nor Portobello host any content. Stremio is just an open-source streaming video player that allows software addons to extend its functionality. Portobello is just an addon that indexes, aggregates, and organizes publicly available content found elsewhere.
-			</p>
-			<h5>How are Stremio and Portobello related?</h5>
-			<p>
-				Stremio and Portobello are not related in any way. Portobello is an addon for Stremio the same way Grammarly is an extension for Chrome. Two pieces of software that work together, but made by two different entities that have no relationship between them whatsoever.
-			</p>
-			<h5>What personal data is stored?</h5>
-			<p>
-				The only data kept is the one used to fill the form in this website. Nothing else.
-			</p>
-			<p>
-				Stremio keeps your mail address and password to allow you to log in, and Portobello keeps your mail address only to notify you about any technical issues during the beta, and when the beta will end. No spam. Never.
-			</p>
-			<p>
-				There is no data tracking of any kind about the use of the service. Portobello is specifically designed not to track or keep absolutely any data of its use.
-			</p>
-<!--
-			<h5>Can I share my account?</h5>
-			<p>
-				Stremio does not have profiles, so you can not have different users within your account. You can share your account with a couple of people if you want, but be aware that your watching history, library, and other settings will be shared.
-			</p>
-			<p>
-				Keep in mind this is a beta, so the performance will suffer if you share your account with more than just a trusted few.
-			</p>
--->
-			<h5>Do I need a VPN?</h5>
-			<p>
-				No. Using a VPN can be a good practice for security and privacy reasons, but it is not required to use Portobello, as it relies on regular http streaming traffic.
-			</p>
-			<h5>What languages is the content available in?</h5>
-			<p>
-				Almost all publicly available content is in its original audio version. Some files have several audio tracks in additional dubbed languages, but it may very well not be the case for the specific content you may want to see.
-			</p>
-			<p>
-				Some files have embedded subtitles is several languages, and Portobello automatically integrates Opensubtitles for every file in every available language on top of that.
-			</p>
-			<h5>Why are colors weird in some videos?</h5>
-			<p>
-				You are playing a file with an HDR or Dolby Vision profile your device does not support. Select a different file.
-			</p>
-			<h5>Why is the sound weird in some videos?</h5>
-			<p>
-				You are playing a file with a Sorround profile your device does not support. If available, choose a different audio track. If not, select a different file.
-			</p>
-			<h5>Why are some videos buffering?</h5>
-			<p>
-				Be mindful of your internet connection speed and the size of the file you want to play. To make things easy, Portobello first lists files selected for their quality and size balance (and marks them with a star), but if you scroll down the list to choose a 40GB 4K HDR video file, ensure you have a stable broadband internet connection fast enough to handle it.
-			</p>			
-			<h5>How do I get support?</h5>
-			<p>
-				You can join our <a href="https://discord.gg/sR856w3ftB">Discord Community</a>.
-			</p>
-		</section>
-
+				</form>
+			</section>
+			<section id="download">
+				<h4>2. Get the Stremio app</h4>
+				<p>Download the Stremio app for your device and sign in with the credentials you just created. That's it. That's all.</p>
+				<ul>
+					<li><a target="_blank" href="https://play.google.com/store/apps/details?id=com.stremio.one"><img alt="Google Play" src="/img/googleplay.svg" /></a></li>
+					<li><a href="https://dl.strem.io/stremio-shell-ng/v5.0.16/StremioSetup-v5.0.16_x64.exe"><button><img alt="logo" src="/img/windows.svg" /><span>Windows</span></button></a></li>
+					<li><a href="https://dl.strem.io/stremio-shell-macos/v5.1.16/Stremio_arm64.dmg"><button><img alt="logo" src="/img/macos.svg" /><span>MacOS</span></button></a></li>
+				</ul>
+				<span></span>
+				<p>You will also find the Stremio app in the app store of your Smart TV or TV Box.</p>
+				<ul>
+					<li><img alt="Google TV" src="/img/googletv.svg" /></li>
+					<li><img alt="Android TV" src="/img/androidtv.svg" /></li>
+					<li><img alt="Samsung" title="Tizen" src="/img/samsung.svg" /></li>
+					<li><img alt="LG" title="webOS" src="/img/lg.svg" /></li>
+					<li><img alt="Philips" title="TitanOS" src="/img/philips.svg" /></li>
+					<li><img alt="Hisense" title="Vidaa" src="/img/hisense.svg" /></li>
+				</ul>
+				<span></span>
+				<p>Visit the <a target="_blank" href="https://www.stremio.com/downloads">Stremio website</a> for more download options.</p>
+			</section>
+		</main>
 		<footer>
-			<figure>
-				<a href="https://memorand.cc" target="_blank"><img src="/img/memorand.png" /></a>
-				<figcaption>A memorand project</figcaption>
-			</figure>
-			<p>
-				<small><strong>Disclaimer.</strong> Portobello does not host, store, or distribute any files or content. The addon is a tool to aggregate publicly available information from third-party sources. Portobello is not responsible for: (a) The availability, accuracy, or legality of the content provided by these sources; and (b) Any DMCA complaints or legal issues related to the content. Such concerns should be directed to the appropriate content provider or hosting service. Use Portobello at your own discretion. By using the service, you acknowledge that some content may be publicly accessible, and Portobello does not host or control this content.</small>
-			</p>
-			<p>
-				<small><strong>Limitation of Liability.</strong> Portobello is provided "as is" without any warranties, express or implied. To the fullest extent permitted by law, Portobello shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to: (a) Loss of data or profits; (b) Service interruptions or downtime; (c) Unauthorized access to your account or data; and (d) Any third-party actions, content, or services accessed through Portobello.</small>
-			</p>
+			<ul>
+				<li><a href="/faq/">FAQ</a></li>
+				<li><a href="/terms/">Terms of Service</a></li>
+			</ul>
+			<span><a target="_blank" href="https://memorand.cc"><img alt="memorand logo" src="/favicon/apple-touch-icon.png" /></a></span>
+			<p>A memorand project</p>
 		</footer>
 
 		<!-- Header slideshow -->
