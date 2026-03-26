@@ -480,9 +480,6 @@ footer p {
 		background-color: var(--compColor);
 		border-left: 1px dashed var(--borderColor);
 	}
-	#download button {
-		background-color: var(--backColor);
-	}
 	footer {
 		background-color: var(--backColor);
 	}
