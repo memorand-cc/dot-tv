@@ -525,7 +525,7 @@ article p + h3, article ol + h3 {
 		margin: 0 3.6rem;
 	}
 }
-@media screen and (min-width: 1280px) {	
+@media screen and (min-width: 1280px) {
 	footer.extra {
 		background-color: var(--compColor);
 	}
